@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STM32 WEB Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #f1c40f;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background: #f39c12;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e67e22;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    .author {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #f1c40f;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      margin: 0;
+    }
+
+    .copyright {
+      font-size: 1rem;
+      color: #ecf0f1;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the STM32 Web Interface</h1>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Status Monitor</h2>
+      <p>System is <strong>Online</strong></p>
+      <button class="btn">Refresh Status</button>
+    </div>
+
+    <div class="card">
+      <h2>Control Panel</h2>
+      <p>Interact with GPIOs or peripherals via this web interface.</p>
+      <button class="btn">Toggle LED</button>
+    </div>
+
+    <div class="card">
+      <h2>About</h2>
+      <p>This page is served directly from an STM32 microcontroller using the lwIP TCP/IP stack and a lightweight embedded HTTP server.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="author">by Zain</div>
+    <div class="copyright">&copy; 2025 STM32 Embedded System</div>
+  </footer>
+
+</body>
+</html>
